@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Général */
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main > h3 {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    margin: 7vh auto 0;
+    font-size: 25px;
+}
+
+a:hover {
+    text-decoration: underline;
+    background: white;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+}
+
+body {
+    display: flex;
+}
+
+i {
+    font-size: 20px;
+}
+
+/* Qui suis je ? */
+
+button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    height: 4vh;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+}
+
+/* Header */
+
+header {
+    background: rgba(0, 0, 0, 0.836);
+    height: 100vh;
+    width: 30%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    color: white;
+}
+
+header > h1 {
+    margin: 0 auto;
+    color: yellow;
+}
+
+h3 {
+    color: yellow;
+}
+
+figure {
+    height: 30vh;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/* main */
+
+main {
+    background: rgb(255,242,12);
+background: linear-gradient(180deg, rgba(255,242,12,1) 7%, rgba(252,255,71,1) 19%, rgba(253,255,120,1) 33%, rgba(254,255,175,1) 54%, rgba(255,255,216,1) 75%, rgba(255,255,255,1) 94%);
+    width: 70%;
+    color: black;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 35px auto;
+}
+
+h3{
+    font-size: 20px;
+}
+
+section{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section > article { 
+    padding: 30px 10px;
+    max-width: 210px;
+    margin: 0 10px;
+    color: white;
+    box-shadow: 7px 5px 20px  black;
+}
+
+section > article:hover {
+    
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+
+section > article > figure {
+    width: 100%;
+    border-radius: 0%;
+    min-height: 30vh;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin: 5px 0;
+}
+
+section > article > figure > img {
+    height: 100%;
+    width: 100%;
+}
+
+main > section:last-child > article,
+main > section:nth-child(6) > article{
+    background: rgba(0, 0, 0, 0.281);
+    color: white;
+    
+}
+
+main > section:last-child > article:hover,
+main > section:nth-child(6) > article:hover{
+    background: black;
+    box-shadow: 20px 20px 50px 5px  white;
+}
+
+/* animation */
+
+.fade-down {
+    transition: 5s;
+}
+
+@media screen and (max-width: 843px) {
+    main > section {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+    header {
+        width: 100%;
+        position: absolute;
+        text-align: center ;
+    }
+    main {
+        margin: 100vh 0 0 0;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    h2{
+        text-align: center;
+        color: black;
+    }
+
+    h3 {
+        margin: 3vh auto;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    main > h3 {
+        color: black;
+    }
+
+    main > section > article {
+        background: white;
+        color: black;
+    }
+
+    main > section > article > h4 {
+        font-size: 20px;
+    }
+
+    main > section > article > ul > li {
+        font-size: 15px;
+    }
+
+    header > h1 + figure {
+        border-radius: 0;
+        height: 80vh;
+        width: 150px;
+        margin: 10px auto 20px;
+    }
+
+    header > ul > h3 {
+        margin: 2vh 0 0 0;
+    }
+
+    header > h1 + figure > img {
+        width: 100%;
+        height: 100%;
+    }
+}
